@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Formulário de Postagem</h2>
+    <form action="processar_formulario.php" method="post" enctype="multipart/form-data">
+        <label for="titulo">Título:</label><br>
+        <input type="text" id="titulo" name="titulo"><br><br>
+
+        <label for="postagem">Postagem:</label><br>
+        <textarea id="postagem" name="postagem" rows="4" cols="50"></textarea><br><br>
+
+        <label for="arquivo">Selecionar arquivo:</label><br>
+        <input type="file" id="arquivo" name="arquivo"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
